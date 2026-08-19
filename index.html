@@ -1,0 +1,1804 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Action Electric Co. | Trusted Electrician Services in Houston, TX
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                yellow: "#F5C518",
+                blue: "#0066CC",
+                darkblue: "#004C99",
+                lightblue: "#E6F0FA",
+                gray: "#F5F5F5",
+                darkgray: "#333333",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      .accordion-content.open {
+        max-height: 500px;
+      }
+      .star-rating {
+        color: #f5c518;
+      }
+      .hero-overlay {
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.3) 50%,
+          transparent 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-brand-yellow py-2">
+      <div
+        class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between text-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-bolt text-brand-blue text-lg"></i>
+          <span class="font-bold text-brand-darkblue text-lg"
+            >Action Electric Co.</span
+          >
+        </div>
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#services" class="hover:text-brand-blue transition"
+            >Residential</a
+          >
+          <a href="#services" class="hover:text-brand-blue transition"
+            >Commercial</a
+          >
+          <a href="#about" class="hover:text-brand-blue transition">About Us</a>
+          <a href="#blog" class="hover:text-brand-blue transition">Blog</a>
+          <a href="#why-us" class="hover:text-brand-blue transition">Why Us</a>
+          <a href="#expert-tips" class="hover:text-brand-blue transition"
+            >Expert Tips</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <a
+            href="#book-now"
+            class="bg-brand-blue text-white px-4 py-1.5 rounded font-semibold text-sm hover:bg-brand-darkblue transition"
+            >Easy Online Booking</a
+          >
+          <a
+            href="tel:713-555-0199"
+            class="font-bold text-brand-darkblue text-lg"
+            ><i class="fas fa-phone mr-1"></i> 713-555-0199</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="md:hidden bg-white border-b px-4 py-2">
+      <div class="flex flex-wrap gap-3 text-sm justify-center">
+        <a href="#services" class="text-gray-600">Residential</a>
+        <a href="#services" class="text-gray-600">Commercial</a>
+        <a href="#about" class="text-gray-600">About Us</a>
+        <a href="#blog" class="text-gray-600">Blog</a>
+        <a href="#why-us" class="text-gray-600">Why Us</a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-[600px] flex items-center"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80&quot;);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="absolute inset-0 hero-overlay"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 py-16 w-full">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+              Trusted Electrician Services for Homes and Businesses in Houston,
+              TX
+            </h1>
+            <p class="text-lg mb-6 text-gray-200">
+              When you need dependable residential electricians or commercial
+              electricians in Houston, TX, you can trust the experts at Action
+              Electric Co. Our team of local electricians is dedicated to
+              providing top-tier home electrical repair and commercial
+              electrical services. Whether you need a quick electrical fix or a
+              full system upgrade, our licensed electricians in Houston are
+              ready to help.
+            </p>
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="bg-white/20 backdrop-blur rounded-lg px-4 py-2 flex items-center gap-2"
+              >
+                <i class="fas fa-star star-rating"></i>
+                <span class="font-bold">545 Reviews</span>
+              </div>
+              <div
+                class="bg-white/20 backdrop-blur rounded-lg px-4 py-2 flex items-center gap-2"
+              >
+                <span class="font-bold text-2xl">4.9</span>
+                <span class="text-sm">/5 Rating</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-2xl p-6">
+            <h3 class="text-xl font-bold text-brand-darkblue mb-4">
+              Book Online
+            </h3>
+            <form class="space-y-3">
+              <div class="grid grid-cols-2 gap-3">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Street Address"
+                class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue"
+              />
+              <div class="grid grid-cols-2 gap-3">
+                <input
+                  type="text"
+                  placeholder="City"
+                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue"
+                />
+                <input
+                  type="text"
+                  placeholder="ZIP/Postal Code"
+                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+              <select
+                class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue text-gray-500"
+              >
+                <option>Select Service Type</option>
+                <option>Residential</option>
+                <option>Commercial</option>
+                <option>Emergency</option>
+              </select>
+              <label class="flex items-start gap-2 text-xs text-gray-600">
+                <input type="checkbox" class="mt-0.5" />
+                <span
+                  >I agree to receive communications from Action Electric Co.
+                  and understand I can opt out anytime.</span
+                >
+              </label>
+              <button
+                type="submit"
+                class="w-full bg-brand-blue text-white font-bold py-3 rounded hover:bg-brand-darkblue transition"
+              >
+                Schedule Appointment
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-brand-darkblue text-center mb-12">
+          Electrician services in Houston<br />Midtown, TX
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-brand-lightblue rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-shield-alt text-brand-blue text-xl"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Electrical Safety</h3>
+            <p class="text-gray-600 text-sm">
+              Our service professionals perform detailed inspections to identify
+              potential electrical hazards and provide effective solutions to
+              keep your property up to code.
+            </p>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-brand-lightblue rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-tools text-brand-blue text-xl"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Repairs</h3>
+            <p class="text-gray-600 text-sm">
+              We are the top choice for local electrical repairs, combining
+              high-quality workmanship with reliable service you can trust.
+            </p>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-brand-lightblue rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-plug text-brand-blue text-xl"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Installations</h3>
+            <p class="text-gray-600 text-sm">
+              Stay comfortable throughout the year by letting our experts handle
+              your ceiling fan installations and other electrical upgrades.
+            </p>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition"
+          >
+            <div
+              class="w-12 h-12 bg-brand-lightblue rounded-full flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-lightbulb text-brand-blue text-xl"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Lighting</h3>
+            <p class="text-gray-600 text-sm">
+              From sophisticated landscape fixtures to cozy kitchen ambiance, we
+              design and install custom lighting to enhance your home's
+              aesthetic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blue Banner -->
+    <section class="bg-brand-blue py-6">
+      <div
+        class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-4 text-white">
+          <div
+            class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center"
+          >
+            <i class="fas fa-users text-2xl"></i>
+          </div>
+          <div>
+            <p class="text-xl font-bold">
+              Serving over 100,000 customers a year!
+            </p>
+          </div>
+        </div>
+        <a
+          href="#book-now"
+          class="bg-brand-yellow text-brand-darkblue font-bold px-6 py-3 rounded hover:bg-yellow-400 transition"
+          >Book Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="py-16 bg-brand-gray">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-brand-darkblue mb-8">
+          Customer Reviews
+        </h2>
+        <div class="bg-white rounded-xl p-8 max-w-3xl mx-auto shadow-sm">
+          <div class="flex justify-center gap-1 mb-4">
+            <i class="fas fa-star star-rating text-xl"></i>
+            <i class="fas fa-star star-rating text-xl"></i>
+            <i class="fas fa-star star-rating text-xl"></i>
+            <i class="fas fa-star star-rating text-xl"></i>
+            <i class="fas fa-star star-rating text-xl"></i>
+          </div>
+          <p class="text-gray-700 text-lg italic mb-4">
+            "The Neighborly Done Right Promise delivered by Action Electric Co.,
+            a proud Neighborly company."
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <div
+              class="w-12 h-12 bg-brand-lightblue rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-user text-brand-blue"></i>
+            </div>
+            <div class="text-left">
+              <p class="font-bold">Sarah M.</p>
+              <p class="text-sm text-gray-500">Houston, TX</p>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="inline-block mt-6 text-brand-blue font-semibold hover:underline"
+          >View All Testimonials</a
+        >
+      </div>
+    </section>
+
+    <!-- Electrical Services Cards -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-brand-darkblue text-center mb-4">
+          Electrical Services in Houston Midtown, TX
+        </h2>
+        <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+          Founded in 1994, Action Electric Co. has grown into a franchise that
+          serves customers around the globe. The team at Action Electric Co. of
+          Houston Midtown credits that success to a belief in a core set of
+          values: our electricians treat clients with the same respect and
+          integrity that we would like to receive. We offer premier services and
+          customer care in Houston, TX.
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition"
+          >
+            <div class="h-40 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80"
+                alt="Installations"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">Installations</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Don't get left in the dark! Our electricians are ready to
+                install ceiling fans, outlets, and more.
+              </p>
+              <a
+                href="#"
+                class="text-brand-blue font-semibold text-sm hover:underline"
+                >Learn More <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition"
+          >
+            <div class="h-40 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&q=80"
+                alt="Lighting"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">Lighting</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                From ambient to task lighting, we create a cozy atmosphere in
+                the kitchen or add a touch of sophistication to a bathroom.
+              </p>
+              <a
+                href="#"
+                class="text-brand-blue font-semibold text-sm hover:underline"
+                >Learn More <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition"
+          >
+            <div class="h-40 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&q=80"
+                alt="Electrical Safety"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">Electrical Safety</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Our electricians perform detailed inspections in Houston
+                Midtown, TX, and can suggest solutions for any issues.
+              </p>
+              <a
+                href="#"
+                class="text-brand-blue font-semibold text-sm hover:underline"
+                >Learn More <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition"
+          >
+            <div class="h-40 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80"
+                alt="Repairs"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">Repairs</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                High-quality workmanship and service make us the top choice for
+                electrical repairs near you.
+              </p>
+              <a
+                href="#"
+                class="text-brand-blue font-semibold text-sm hover:underline"
+                >Learn More <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-16 bg-brand-gray">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-brand-darkblue text-center mb-4">
+          Our Special Offers
+        </h2>
+        <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+          Don't miss out on exclusive deals for scheduling your appointment, and
+          we will check your home's electrical system for signs of
+          deterioration. It's also wise to be reminded of our commitment to our
+          clients' safety and happiness.
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition"
+          >
+            <div class="bg-brand-blue text-white p-4 text-center">
+              <p class="text-sm font-semibold">Action Electric Co.</p>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-brand-darkblue mb-2">
+                $250 Off Panel Installation
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Upgrade Your Home's Power Capacity and Keep Your Family Safe
+                with Houston's Trusted Electricians
+              </p>
+              <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Increase your
+                  home's electrical capacity
+                </li>
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Improve safety
+                  and efficiency
+                </li>
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Expert
+                  installation guaranteed
+                </li>
+              </ul>
+              <button
+                class="w-full bg-brand-yellow text-brand-darkblue font-bold py-2 rounded hover:bg-yellow-400 transition"
+              >
+                CLAIM OFFER
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition"
+          >
+            <div class="bg-brand-blue text-white p-4 text-center">
+              <p class="text-sm font-semibold">Action Electric Co.</p>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-brand-darkblue mb-2">
+                $25 Off Any Service or Repair When You Book Online
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                From Flickering Lights to Outlet Fixes, Enjoy Reliable Service
+                for Less
+              </p>
+              <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Valid for any
+                  electrical service
+                </li>
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Online booking
+                  required
+                </li>
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Limited time
+                  offer
+                </li>
+              </ul>
+              <button
+                class="w-full bg-brand-yellow text-brand-darkblue font-bold py-2 rounded hover:bg-yellow-400 transition"
+              >
+                CLAIM OFFER
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition"
+          >
+            <div class="bg-brand-blue text-white p-4 text-center">
+              <p class="text-sm font-semibold">Action Electric Co.</p>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-brand-darkblue mb-2">
+                $50 Off Whole Home Surge Protection
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Protect Your Valuable Appliances and Electronics from
+                Unpredictable Power Surges
+              </p>
+              <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Protect all
+                  home electronics
+                </li>
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Professional
+                  installation
+                </li>
+                <li>
+                  <i class="fas fa-check text-green-500 mr-2"></i>Peace of mind
+                  guaranteed
+                </li>
+              </ul>
+              <button
+                class="w-full bg-brand-yellow text-brand-darkblue font-bold py-2 rounded hover:bg-yellow-400 transition"
+              >
+                CLAIM OFFER
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a
+            href="#"
+            class="inline-block bg-brand-blue text-white font-bold px-6 py-3 rounded hover:bg-brand-darkblue transition"
+            >Easy Online Booking</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Service You Can Trust -->
+    <section id="why-us" class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-brand-darkblue text-center mb-4">
+          Service You Can Trust!
+        </h2>
+        <p class="text-center text-gray-600 mb-8">
+          Let us know how we can help you today.
+        </p>
+        <div class="space-y-3">
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-lightbulb text-brand-blue"></i>
+                <span class="font-semibold">Lighting</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Our lighting services include installation, repair, and upgrades
+                for both indoor and outdoor spaces. We handle everything from
+                recessed lighting to landscape lighting.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-car text-brand-blue"></i>
+                <span class="font-semibold">Electric Vehicle Chargers</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                We install Level 1 and Level 2 EV charging stations at your home
+                or business. Our electricians ensure safe, code-compliant
+                installation for all major EV brands.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-microchip text-brand-blue"></i>
+                <span class="font-semibold">Smart Devices</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Upgrade your home with smart switches, outlets, and home
+                automation systems. We install and configure devices from all
+                major smart home brands.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-home text-brand-blue"></i>
+                <span class="font-semibold">Attic Installation</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                We provide safe attic electrical installations including
+                lighting, exhaust fans, and wiring for HVAC systems. All work
+                meets local building codes.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-fire text-brand-blue"></i>
+                <span class="font-semibold"
+                  >Carbon Monoxide and Smoke Detectors</span
+                >
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Protect your family with professionally installed and
+                interconnected smoke and carbon monoxide detectors. We ensure
+                proper placement and functionality.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-fan text-brand-blue"></i>
+                <span class="font-semibold">Fans</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Ceiling fan installation, repair, and replacement services. We
+                handle all types including standard, low-profile, and smart
+                ceiling fans with remote controls.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Neighborly Section -->
+    <section class="py-16 bg-brand-gray">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80"
+              alt="Neighborly"
+              class="rounded-xl shadow-lg w-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-brand-darkblue mb-4">
+              Neighborly
+            </h2>
+            <h3 class="text-xl font-semibold text-brand-blue mb-4">
+              Your Source for Local Home Service
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Action Electric Co. is proud to be part of the Neighborly family
+              of home service brands. Together, we provide a comprehensive range
+              of services to keep your home running smoothly.
+            </p>
+            <div class="bg-white rounded-lg p-4 border-l-4 border-brand-blue">
+              <p class="text-sm text-gray-600">
+                <i class="fas fa-map-marker-alt text-brand-blue mr-2"></i>
+                <strong
+                  >10400 Westoffice Dr, Ste 117 Houston, TX 77042, United
+                  States</strong
+                >
+              </p>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-bold mb-2">Areas We Serve</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-white px-3 py-1 rounded-full text-sm border"
+                  >Houston</span
+                >
+                <span class="bg-white px-3 py-1 rounded-full text-sm border"
+                  >Midtown</span
+                >
+                <span class="bg-white px-3 py-1 rounded-full text-sm border"
+                  >Downtown</span
+                >
+                <span class="bg-white px-3 py-1 rounded-full text-sm border"
+                  >Heights</span
+                >
+                <span class="bg-white px-3 py-1 rounded-full text-sm border"
+                  >Montrose</span
+                >
+                <span class="bg-white px-3 py-1 rounded-full text-sm border"
+                  >River Oaks</span
+                >
+                <span class="bg-white px-3 py-1 rounded-full text-sm border"
+                  >Galleria</span
+                >
+                <span class="bg-white px-3 py-1 rounded-full text-sm border"
+                  >Bellaire</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnerships & Achievements -->
+    <section class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-brand-darkblue mb-8">
+          Partnerships & Achievements
+        </h2>
+        <div class="flex flex-wrap justify-center items-center gap-8">
+          <div class="bg-gray-100 rounded-lg px-6 py-4">
+            <i class="fas fa-award text-brand-blue text-3xl mb-2"></i>
+            <p class="font-bold text-sm">Veteran Owned</p>
+          </div>
+          <div class="bg-gray-100 rounded-lg px-6 py-4">
+            <i class="fas fa-certificate text-brand-blue text-3xl mb-2"></i>
+            <p class="font-bold text-sm">Licensed & Insured</p>
+          </div>
+          <div class="bg-gray-100 rounded-lg px-6 py-4">
+            <i class="fas fa-shield-alt text-brand-blue text-3xl mb-2"></i>
+            <p class="font-bold text-sm">BBB Accredited</p>
+          </div>
+          <div class="bg-gray-100 rounded-lg px-6 py-4">
+            <i class="fas fa-thumbs-up text-brand-blue text-3xl mb-2"></i>
+            <p class="font-bold text-sm">Done Right Promise</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-16 bg-brand-gray">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-brand-darkblue text-center mb-4">
+          Electrical Service FAQs
+        </h2>
+        <p class="text-center text-gray-600 mb-8">
+          Here you'll find answers to some of the most common questions we
+          receive about electrician services. Whether you're a homeowner or a
+          property manager, Action Electric Co. of Houston Midtown provides
+          clear, informative answers to help you better understand your
+          electrical system.
+        </p>
+        <div class="space-y-3">
+          <div
+            class="bg-white rounded-lg border border-gray-200 overflow-hidden"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition"
+            >
+              <span class="font-semibold text-brand-darkblue"
+                >How Often Should I Have My Electrical System Inspected?</span
+              >
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content">
+              <div class="p-4 text-gray-600 text-sm border-t">
+                For general safety, we recommend having your electrical system
+                inspected by our service professionals every 3-5 years. You
+                should also schedule an inspection if: Your home is more than 40
+                years old, you're buying a new home, you're planning a major
+                renovation, or you're adding major new appliances.
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg border border-gray-200 overflow-hidden"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition"
+            >
+              <span class="font-semibold text-brand-darkblue"
+                >Can I Do My Own Electrical Repairs?</span
+              >
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content">
+              <div class="p-4 text-gray-600 text-sm border-t">
+                While changing a lightbulb is simple, most electrical repairs
+                should be left to a professional. DIY electrical work can be
+                life threatening and may lead to electric shock, fire, or damage
+                to your appliances. It can also violate local building codes and
+                void your homeowner's insurance. For anything beyond the most
+                basic tasks, it's always safest to call a licensed electrician.
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg border border-gray-200 overflow-hidden"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition"
+            >
+              <span class="font-semibold text-brand-darkblue"
+                >What Are GFCI Outlets?</span
+              >
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content">
+              <div class="p-4 text-gray-600 text-sm border-t">
+                A Ground Fault Circuit Interrupter (GFCI) outlet is a special
+                type of outlet that quickly shuts off power if it detects an
+                imbalance in the current. This rapid shutdown helps prevent
+                serious electric shock. GFCI outlets are required by code in
+                areas where moisture is present, such as bathrooms, kitchens,
+                basements, and garages.
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg border border-gray-200 overflow-hidden"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition"
+            >
+              <span class="font-semibold text-brand-darkblue"
+                >How Can I Save Energy with My Electrical System?</span
+              >
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content">
+              <div class="p-4 text-gray-600 text-sm border-t">
+                We can help boost your energy savings. Some of the best ways to
+                upgrade your electrical components to save energy and money
+                include: Switch to LED Lighting, Install Dimmers, Use Smart
+                Plugs and Switches, Consider a Whole-Home Surge Protector.
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg border border-gray-200 overflow-hidden"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition"
+            >
+              <span class="font-semibold text-brand-darkblue"
+                >How Do I Know If My Home Needs Electrical Upgrades?</span
+              >
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content">
+              <div class="p-4 text-gray-600 text-sm border-t">
+                We can inspect your home for potential electrical upgrade needs.
+                Your home might need electrical upgrades if you notice any of
+                the following signs: Frequently tripping breakers or blowing
+                fuses, flickering or dimming lights, outlets that are warm to
+                the touch, burning smells, or if your home is over 40 years old.
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg border border-gray-200 overflow-hidden"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition"
+            >
+              <span class="font-semibold text-brand-darkblue"
+                >Why should I get an electrical safety inspection?</span
+              >
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content">
+              <div class="p-4 text-gray-600 text-sm border-t">
+                An electrical safety inspection can reveal the risk of serious
+                damage to your property and harm to your loved ones. Mr.
+                Electric can perform a safety inspection to ensure your system
+                operates correctly. Our safety reviews check several points
+                including grounding systems, wire outlets, and HVAC systems.
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg border border-gray-200 overflow-hidden"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition"
+            >
+              <span class="font-semibold text-brand-darkblue"
+                >Is it important to install a backup generator?</span
+              >
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content">
+              <div class="p-4 text-gray-600 text-sm border-t">
+                During a natural disaster or unexpected power outage, a
+                generator makes all the difference. It can keep your belongings
+                and family safe at home, or ensure your business operations
+                don't come to a halt and risk the well-being of your employees.
+                We offer many electrical services in Houston Midtown, TX,
+                including generator installation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-brand-darkblue mb-4">
+          Contact Action Electric Co. of Houston Midtown
+        </h2>
+        <p class="text-gray-600 mb-8">
+          Founded in 1994, our veteran-owned company has evolved into a global
+          franchise built on a foundation of integrity and core values. Ask us
+          about discounts for veterans and first responders. At Action Electric
+          Co. of Houston Midtown, we are dedicated to providing premier
+          electrician services and customer care throughout the Houston area.
+          Reach out today to learn more about our professional electrician
+          services.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="tel:713-555-0199"
+            class="bg-brand-blue text-white font-bold px-8 py-3 rounded hover:bg-brand-darkblue transition"
+            ><i class="fas fa-phone mr-2"></i>Call Us Now</a
+          >
+          <a
+            href="#book-now"
+            class="bg-brand-yellow text-brand-darkblue font-bold px-8 py-3 rounded hover:bg-yellow-400 transition"
+            ><i class="fas fa-calendar mr-2"></i>Book Online</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog & Expert Tips -->
+    <section id="blog" class="py-16 bg-brand-gray">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-bold text-brand-darkblue">Our Blog</h2>
+              <a
+                href="#"
+                class="text-brand-blue font-semibold text-sm hover:underline"
+                >View All Blog Posts <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+            <div class="space-y-6">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80"
+                    alt="Blog"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-2">
+                    Dangers of an Overloaded Circuit
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    Overloading an electrical circuit can cause serious
+                    problems. While most trip your circuit breaker, chances are
+                    that you've created a circuit overload at least once in your
+                    life.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-brand-blue font-semibold text-sm hover:underline"
+                    >Read More <i class="fas fa-arrow-right ml-1"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80"
+                    alt="Blog"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-2">
+                    Is Your Electrical Outlet Not Working?
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    When the simple task of plugging in your cell phone charger
+                    or hair dryer into the wall leaves you scratching your head
+                    and wondering why...
+                  </p>
+                  <a
+                    href="#"
+                    class="text-brand-blue font-semibold text-sm hover:underline"
+                    >Read More <i class="fas fa-arrow-right ml-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="expert-tips">
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-bold text-brand-darkblue">
+                Expert Tips
+              </h2>
+              <a
+                href="#"
+                class="text-brand-blue font-semibold text-sm hover:underline"
+                >View All Expert Tips <i class="fas fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+            <div class="space-y-6">
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80"
+                    alt="Expert Tips"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-2">
+                    Top 8 Electrical Safety Essentials Your Home Needs
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    The cliche of "safety first" applies to most areas of life,
+                    but especially in homeownership. You never know when the
+                    next electrical storm will hit, so it's better to be safe
+                    than sorry.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-brand-blue font-semibold text-sm hover:underline"
+                    >Read More <i class="fas fa-arrow-right ml-1"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80"
+                    alt="Expert Tips"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-2">
+                    Smart Devices: How Safe Are They?
+                  </h3>
+                  <p class="text-gray-600 text-sm mb-3">
+                    The market for smart home products is worth an estimated $40
+                    billion, with 60% of Americans already owning at least one
+                    device or system and a majority of those planning to
+                    purchase more in the future.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-brand-blue font-semibold text-sm hover:underline"
+                    >Read More <i class="fas fa-arrow-right ml-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Power Banner -->
+    <section class="bg-brand-blue py-12">
+      <div class="max-w-4xl mx-auto px-4 text-center text-white">
+        <div
+          class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4"
+        >
+          <i class="fas fa-bolt text-3xl"></i>
+        </div>
+        <h2 class="text-3xl font-bold mb-2">
+          We have the power to make things better.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Services We Provide -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-brand-darkblue text-center mb-8">
+          Services We Provide
+        </h2>
+        <div class="flex justify-center gap-4 mb-8">
+          <button
+            class="bg-brand-blue text-white px-6 py-2 rounded-full font-semibold"
+          >
+            Residential
+          </button>
+          <button
+            class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-300 transition"
+          >
+            Commercial
+          </button>
+        </div>
+        <div class="space-y-3">
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold">Emergency Electrician</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                24/7 emergency electrical services for urgent issues like power
+                outages, sparking outlets, and electrical fires.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold">Electrical</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Complete electrical services including wiring, panel upgrades,
+                and system installations for homes and businesses.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold">Dedicated Circuits</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Installation of dedicated circuits for high-power appliances
+                like HVAC systems, ovens, and dryers.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold">Lighting</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Indoor and outdoor lighting installation, repair, and design
+                services for any space.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold">Electric Vehicle Chargers</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Home and commercial EV charging station installation for all
+                electric vehicle makes and models.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold">Smart Devices</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Smart home device installation including switches, outlets,
+                thermostats, and security systems.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold">Attic Installation</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Safe electrical installations in attic spaces including
+                lighting, fans, and HVAC connections.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold"
+                  >Carbon Monoxide and Smoke Detectors</span
+                >
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Professional installation and maintenance of smoke and carbon
+                monoxide detection systems.
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition text-left"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fas fa-bolt text-brand-yellow"></i>
+                <span class="font-semibold">Fans</span>
+              </div>
+              <i
+                class="fas fa-chevron-down text-gray-400 transition-transform"
+              ></i>
+            </button>
+            <div class="accordion-content bg-gray-50">
+              <div class="p-4 text-gray-600 text-sm">
+                Ceiling fan installation, repair, and replacement services for
+                all types of fans.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Neighborly Section 2 -->
+    <section class="py-16 bg-brand-gray">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-brand-darkblue mb-2">
+              Neighborly
+            </h2>
+            <h3 class="text-xl font-semibold text-brand-blue mb-4">
+              Your Source for Local Home Service Experts
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Neighborly brands repair, maintain, and enhance properties — to
+              make life easier and more enjoyable for homeowners. Our
+              consistency and commitment to the best for every job we do, and
+              what makes us a leader in the home services space, we are
+              constantly striving to be so remarkable, we become a beloved
+              household name.
+            </p>
+            <a
+              href="#"
+              class="inline-block bg-brand-yellow text-brand-darkblue font-bold px-6 py-3 rounded hover:bg-yellow-400 transition"
+              >Learn More About Neighborly</a
+            >
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80"
+              alt="Neighborly"
+              class="rounded-xl shadow-lg w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Our Team -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-brand-darkblue mb-4">
+          Join Our Team
+        </h2>
+        <p class="text-gray-600 mb-8">
+          "We have the power to make things better." That's our mantra, not only
+          for our customers' electrical needs, but also for our team members'
+          careers!
+        </p>
+        <p class="text-gray-600 mb-8">
+          Start your career with us today. We offer exciting opportunities for
+          growth and success in an important trade.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-brand-blue text-white font-bold px-8 py-3 rounded hover:bg-brand-darkblue transition"
+          >View All Open Positions <i class="fas fa-arrow-right ml-2"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Book Now Section -->
+    <section id="book-now" class="py-16 bg-brand-yellow">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="bg-white rounded-xl shadow-xl p-8">
+          <h2 class="text-3xl font-bold text-brand-darkblue text-center mb-2">
+            Book Now
+          </h2>
+          <p class="text-center text-gray-600 mb-6">
+            Schedule your electrical service appointment online. Fast, easy, and
+            convenient!
+          </p>
+          <form class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1"
+                  >First Name *</label
+                >
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1"
+                  >Last Name *</label
+                >
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1"
+                  >Email *</label
+                >
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1"
+                  >Phone Number *</label
+                >
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1"
+                >Street Address *</label
+              >
+              <input
+                type="text"
+                placeholder="Street Address"
+                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+              />
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1"
+                  >City *</label
+                >
+                <input
+                  type="text"
+                  placeholder="City"
+                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1"
+                  >ZIP/Postal Code *</label
+                >
+                <input
+                  type="text"
+                  placeholder="ZIP/Postal Code"
+                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1"
+                >Service Type</label
+              >
+              <select
+                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue text-gray-500"
+              >
+                <option>Select Service Type</option>
+                <option>Residential Electrical Repair</option>
+                <option>Commercial Electrical Service</option>
+                <option>Emergency Electrical</option>
+                <option>Lighting Installation</option>
+                <option>Panel Upgrade</option>
+                <option>EV Charger Installation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1"
+                >Preferred Date</label
+              >
+              <input
+                type="date"
+                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1"
+                >Additional Notes</label
+              >
+              <textarea
+                rows="3"
+                placeholder="Tell us more about your electrical needs..."
+                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-brand-blue"
+              ></textarea>
+            </div>
+            <label class="flex items-start gap-2 text-sm text-gray-600">
+              <input type="checkbox" class="mt-1" />
+              <span
+                >I agree to receive communications from Action Electric Co. and
+                understand I can opt out anytime. I confirm that I have read and
+                agree to the privacy policy.</span
+              >
+            </label>
+            <button
+              type="submit"
+              class="w-full bg-brand-blue text-white font-bold py-3 rounded hover:bg-brand-darkblue transition text-lg"
+            >
+              Book Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-darkblue text-white py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <i class="fas fa-bolt text-brand-yellow text-xl"></i>
+              <span class="font-bold text-xl">Action Electric Co.</span>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">
+              Your trusted electrician for homes and businesses in Houston, TX.
+            </p>
+            <a
+              href="tel:713-555-0199"
+              class="text-2xl font-bold text-brand-yellow hover:text-yellow-400 transition"
+              ><i class="fas fa-phone mr-2"></i>713-555-0199</a
+            >
+            <div class="flex gap-4 mt-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Services</h4>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Residential</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Commercial</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Emergency Electrical</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Lighting</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Panel Upgrades</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >EV Chargers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Company</h4>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Our Locations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Corporate Home</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Resources</h4>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Expert Tips</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Special Offers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Reviews</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/20 pt-8 text-center text-gray-400 text-sm"
+        >
+          <p class="mb-2">
+            Action Electric Co. is part of the Neighborly family of home service
+            providers.
+          </p>
+          <p>
+            Searching through dozens of home service providers is a thing of the
+            past. Rely on Neighborly's national network of trusted, local home
+            service professionals for all your home service needs.
+          </p>
+          <p class="mt-4">
+            &copy; 2026 Action Electric Co. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      function toggleAccordion(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector(".fa-chevron-down");
+
+        if (content.classList.contains("open")) {
+          content.classList.remove("open");
+          icon.style.transform = "rotate(0deg)";
+        } else {
+          const parent =
+            button.closest("section") || button.closest(".space-y-3");
+          if (parent) {
+            parent.querySelectorAll(".accordion-content.open").forEach((el) => {
+              el.classList.remove("open");
+            });
+            parent.querySelectorAll(".fa-chevron-down").forEach((el) => {
+              el.style.transform = "rotate(0deg)";
+            });
+          }
+          content.classList.add("open");
+          icon.style.transform = "rotate(180deg)";
+        }
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
